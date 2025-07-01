@@ -15,8 +15,6 @@ A modern, full-stack social media platform for sharing photos, built with React,
 - **Profile Page:** View and edit your profile, see your posts.
 - **New Post:** Upload a new photo with a caption.
 
-> _Add your own screenshots to the `screenshots/` folder for a visual preview!_
-
 ---
 
 ## 🚀 Features
