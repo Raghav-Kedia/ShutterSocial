@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: 'Inter', system-ui, sans-serif;
+    }
+
+    body {
+        @apply bg-gradient-to-br from-primary-50 via-primary-100 to-primary-200 min-h-screen font-sans;
+    }
+}
+
+@layer components {
+    .btn {
+        @apply px-4 py-2 rounded-lg font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+    }
+
+    .btn-primary {
+        @apply bg-primary-500 hover:bg-primary-600 text-white font-bold py-2 px-4 rounded-full shadow transition;
+    }
+
+    .btn-secondary {
+        @apply bg-primary-100 hover:bg-primary-200 text-primary-700 font-bold py-2 px-4 rounded-full shadow transition;
+    }
+
+    .btn-danger {
+        @apply btn bg-red-600 text-white hover:bg-red-700 focus:ring-red-500;
+    }
+
+    .input {
+        @apply rounded-full border border-primary-200 px-4 py-2 focus:ring-2 focus:ring-primary-400 focus:border-primary-400 transition;
+    }
+
+    .card,
+    .modal {
+        @apply rounded-3xl shadow-lg bg-white/90 border border-primary-100;
+    }
+
+    .post-card {
+        @apply card p-4 mb-4 hover:shadow-md transition-shadow duration-200;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Fredoka', 'Baloo 2', 'Comic Neue', cursive, sans-serif;
+    }
+}
